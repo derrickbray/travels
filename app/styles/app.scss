@@ -5,3 +5,36 @@
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'nav';
+
+.pictures {}
+
+.grid {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  &__item {
+    width: calc(100% / 4 - 2rem);
+    min-width: 5rem;
+    margin: 1rem;
+  }
+}
+
+.square {
+  position: relative;
+  width: 100%;
+  padding-top: calc(100%);
+  border-radius: 0.4rem;
+  overflow: hidden;
+
+  &__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
