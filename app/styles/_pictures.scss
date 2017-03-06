@@ -1,5 +1,10 @@
 .pictures {
   margin: 6rem;
+  // filter: saturate(10%);
+}
+
+.modal {
+  background: grey;
 }
 
 .hero {
@@ -27,7 +32,6 @@
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-
   &__item {
     width: calc(100% / 3 - 1rem);
     min-width: 5rem;
@@ -41,12 +45,12 @@
       z-index: 10;
 
       .square__pic {
-        object-fit: contain;
+        filter: grayscale(0%);
+        // object-fit: contain;
       }
 
       .grid__item-info {
         display: none;
-        // transition: 0s;
       }
     }
 
