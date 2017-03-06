@@ -1,8 +1,13 @@
+.modal-box {
+  position: relative;
+}
+
 .modal {
   position: absolute;
   width: 100%;
   height: 100%;
   background: grey;
+  // filter: opacity(.2);
 }
 
 .pictures {
