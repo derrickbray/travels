@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: opacity(0.8);
+    filter: opacity(0.9);
   }
 }
 
@@ -34,42 +34,53 @@
   &__item {
     flex-grow: 1;
     width: calc(100% / 3 - 1rem);
-    min-width: 15rem;
+    min-width: 17rem;
     margin: 0.5rem;
     background: white;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.4);
 
-    &:active {
-      transform: scale(1.75);
-      transition: 0.7s;
-      box-shadow: none;
-      z-index: 10;
+    @media (min-width: 1200px) {
 
-      .square__pic {
-        filter: opacity(1);
-      }
+      &:active {
+        transform: scale(1.75);
+        transition: 0.7s;
+        box-shadow: none;
+        z-index: 10;
 
-      .grid__item-info {
-        display: none;
-        width: 0;
-      }
+        .square__pic {
+          filter: opacity(1);
+        }
 
-      .grid__item-infohide {
-        display: block;
-        text-align: center;
+        .grid__item-info {
+          display: none;
+          width: 0;
+        }
+
+        .grid__item-infohide {
+          display: block;
+          text-align: center;
+        }
       }
     }
 
     &-info {
       padding: 0.5rem;
       background: white;
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       text-align: center;
     }
 
     &-infohide {
       display: none;
+      padding: 1rem;
       background: white;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .hidenotdesk {
+    display: none;
   }
 }
