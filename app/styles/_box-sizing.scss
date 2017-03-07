@@ -26,4 +26,8 @@ img {
 .container {
   max-width: 65rem;
   margin: 0 auto;
+
+  @media (min-width: 1400) {
+    max-width: 90rem;
+  }
 }
