@@ -1,6 +1,5 @@
 .pictures {
-  margin: 3rem;
-  margin-bottom: 10rem;
+  margin: 3rem 3rem 10rem;
 }
 
 .hero {
@@ -38,9 +37,7 @@
     margin: 0.5rem;
     background: white;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.4);
-
     @media (min-width: 1200px) {
-
       &:active {
         transform: scale(1.75);
         transition: 0.7s;
@@ -75,11 +72,36 @@
       padding: 1rem;
       background: white;
     }
+
+  }
+}
+
+@media (max-width: 1025px) {
+  .grid__item {
+    // width: calc(100% / 2 - 1rem);
+    width: 100%;
+    filter: opacity(1);
+
+    &-infohide {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .grid__item {
+    // width: calc(100% - 2rem);
+    width: 100%;
+    filter: opacity(1);
+
+    &-infohide {
+      display: flex;
+    }
   }
 }
 
 @media (max-width: 1200px) {
-
   .hidenotdesk {
     display: none;
   }
