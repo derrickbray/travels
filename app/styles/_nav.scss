@@ -8,13 +8,13 @@
   justify-content: space-between;
   font-size: 1.5rem;
 
-  a {
+  &__title {
     color: #EEEEEE;
     text-decoration: none;
   }
-  &__right {}
-  &__left {}
   &__item {
     margin-left: 0.5rem;
+    color: #EEEEEE;
+    text-decoration: none;
   }
 }

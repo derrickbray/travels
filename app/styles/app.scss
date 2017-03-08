@@ -6,3 +6,7 @@
 @import 'box-sizing';
 @import 'nav';
 @import 'pictures';
+
+.current {
+  text-decoration: underline;
+}
